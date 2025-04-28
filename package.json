@@ -1,0 +1,44 @@
+{
+  "name": "mynth-vote",
+  "version": "0.0.1",
+  "description": "CLI for casting votes for Mynth proposals using MNT",
+  "packageManager": "pnpm@10.10.0",
+  "engines": {
+    "node": "^22.12.0"
+  },
+  "type": "module",
+  "bin": {
+    "mynth-vote": "dist/entrypoint.js"
+  },
+  "scripts": {
+    "build": "pnpm tsc",
+    "lint": "pnpm npm-run-all lint:eslint lint:prettier",
+    "lint:eslint": "pnpm eslint .",
+    "lint:prettier": "pnpm exec prettier -c .",
+    "prettier": "pnpm exec prettier -w ."
+  },
+  "resolutions": {
+    "@harmoniclabs/crypto": "^0.3.0-dev0"
+  },
+  "dependencies": {
+    "@libit/pkginfo": "^0.4.2",
+    "@lucid-evolution/lucid": "^0.4.27",
+    "arktype": "^2.1.20",
+    "cli-markdown": "^3.4.0",
+    "commander": "^13.1.0",
+    "ky": "^1.8.1",
+    "ts-handling": "^0.2.5",
+    "tslib": "^2.8.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.1",
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
+    "@types/node": "^22.15.3",
+    "eslint": "^9.25.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.5.3",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.2"
+  }
+}
