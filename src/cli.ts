@@ -1,10 +1,10 @@
-import { pkginfo } from "@libit/pkginfo";
 import { Command } from "commander";
+import version from "./version.js";
 
 const program = new Command()
   .name("mynth-vote")
   .description("A CLI tool for voting on Mynth proposals using MNT")
-  .version(pkginfo.sync()[0].version);
+  .version(version);
 
 function logExit(message: string): void;
 function logExit(name: string, error: { summary: string }): void;
