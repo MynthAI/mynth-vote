@@ -21,7 +21,6 @@
     "@harmoniclabs/crypto": "^0.3.0-dev0"
   },
   "dependencies": {
-    "@libit/pkginfo": "^0.4.2",
     "@lucid-evolution/lucid": "^0.4.27",
     "arktype": "^2.1.20",
     "cli-markdown": "^3.4.0",
