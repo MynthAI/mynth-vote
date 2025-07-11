@@ -1,3 +1,4 @@
 onlyBuiltDependencies:
   - cbor-extract
+  - es5-ext
   - esbuild

@@ -27,12 +27,22 @@ designed for builders, holders, and believers.
 
 ## 🚀 Installation
 
-Clone the repository and set up the CLI globally:
+Clone the repository:
 
 ``` bash
 git clone http://github.com/MynthAI/mynth-vote
 cd mynth-vote
-pnpm install
+```
+
+Ensure you have nodejs and pnpm installed:
+
+``` bash
+bash setup.sh
+```
+
+Set up the CLI globally:
+
+``` bash
 pnpm build
 pnpm link --global
 ```
